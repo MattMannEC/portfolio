@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Matt Mann | Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mattmannportfolio.000webhostapp.com/" />
+        <meta property="og:description" content="Web Développeur full-stack portfolio" />
+        <meta property="og:image" content="https://mattmannportfolio.000webhostapp.com/images/mattHorse3.jpg" />
+
+    <!-- PLUGINS JQUERY-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+        <link rel="stylesheet" href="css/myReset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+
+<!-- Jquery function for smooth scroll -->
+<body onload="init()">
+
+    <div id="main-content">
+
+        <!-- welcome section 100vh on page load. Section stays fixed for 2*vh -->
+
+        <section id="section-welcome">
+            <div class="pop-up-container">
+                <div class="close-pop-up">&#10060</div>
+                <div class="pop-up">
+                    <h2 class="pop-up-text">Premier site 'vitrine' realisé en cours de formation en 2019 après seulement deux mois de cours. &#128513</h2>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class='brand' id="changeText">"Bonjour,<br> je m'appelle Matt."</h1>
+            </div> 
+            <div class="spray r_mobile">
+                <ul class="row icon-spray">
+                    <li class="rellax icon-5 r_1200" data-rellax-speed="-7"></li>
+                    <li class="rellax icon-2" data-rellax-speed="-1"></li>
+                    <li class="rellax icon-1 r_SE" data-rellax-speed="-5"></li>
+                    <li class="rellax icon-3" data-rellax-speed="-2"></li>
+                    <li class="rellax icon-4 r_mobile" data-rellax-speed="-6"></li>
+                </ul> 
+            </div>
+        </section>
+
+        <!-- sticky header -->
+
+        <header>
+            <div class="header-container">
+                <nav class="row flex">
+                    <div class="col-2 logo-container"><img src="images/fish.png" alt="fish icon"></div>
+                    <div class="col-4"></div>
+                    <div class="col-2 nav-responsive-hide">
+                        <div class="retro-box box-shadow"><h3><a href="#about">About</a></h3></div>
+                    </div>
+                    <div class="col-2 nav-responsive-hide">
+                        <div class="retro-box box-shadow"><h3><a href="#contact">Contact</a></h3></div>
+                    </div>
+                    <div class="col-2 nav-responsive-hide">
+                        <div class="retro-box box-shadow"><h3><a href="http://www.linkedin.com/in/matt-mann-737b47193">Linkedin</a></h3></div>
+                    </div>
+                    <div class="col-6 nav-responsive-show drop-menu relative">
+                        <i class="fas fa-bars"></i>
+                        <div class="absolute-box">
+                            <ul class="drop-menu">
+                                <li class="list-item"><a href="#about">About</a></li>
+                                <li class="list-item"><a href="#contact">Contact</a></li>
+                                <li class="list-item"><a href="http://www.linkedin.com/in/matt-mann-737b47193">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="section-1">
+            <div class="container flex article">
+                <div class="col-6 image-res" id="about">
+                    <img src="images/bus.jpg" alt="bus">
+                </div>
+                <div class="col-6 phrase-container phrases-res">
+                    <h4 class="text-left">
+                        <span class="phrase-1 phrase-text">"Je suis né à Londres,</span>
+                        <span class="phrase-2 phrase-text">mais maintenant j'habite à Bordeaux. </span>
+                        <span class="phrase-3 phrase-text">Je suis bilingue anglais et français."</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="spray r_mobile">
+                <ul class="row icon-spray">
+                    <li class="rellax icon-1 r_1200" data-rellax-speed="-5"></li>
+                    <li class="rellax icon-2 " data-rellax-speed="-2"></li>
+                    <li class="fas fa-cat rellax icon-2 r_SE" data-rellax-speed="-3"></li>
+                    <li class="rellax icon-4" data-rellax-speed="3"></li>
+                    <li class="rellax icon-5" data-rellax-speed="7"></li>
+                    <li class="rellax icon-6" data-rellax-speed="-1"></li>
+                    <li class="rellax icon-1" data-rellax-speed="1"></li>
+                </ul> 
+            </div>    
+        </section>
+        <section id="section-2">
+                <div class="container flex article">
+                    <div class="col-6 phrase-container phrases-res">
+                        <a name="about"></a>
+                        <h4 class="text-left">
+                            <span class="phrase-1b phrase-2b phrase-text">"J'étais fatigué de faire du pain. </span>
+                            <span class="phrase-2b phrase-3b phrase-text">Alors, maintenant j'apprends à faire plein de nouvelles choses;"  </span>
+                            <div class="phrase-3b icon-container">
+                                <img class="icons" src="images/css.png" alt="css">
+                                <img class="icons" src="images/javascript.png" alt="Javascript">
+                                <img class="icons" src="images/jquery.png" alt="Jquery">
+                                <img class="icons" src="images/php.png" alt="PHP">
+                                <img class="icons" src="images/python.png" alt="Python">
+                                <img class="icons" src="images/mysql.png" alt="mysql">
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="col-6 image-res">
+                        <img src="images/baguette.jpg" alt="baguette">
+                    </div>
+                </div>
+                <div class="spray r_mobile">
+                    <ul class="row icon-spray">
+                        <li class="rellax icon-6" data-rellax-speed="3"></li>
+                        <li class="rellax icon-5" data-rellax-speed="7"></li>
+                        <li class="rellax icon-2" data-rellax-speed="-1"></li>
+                        <li class="rellax icon-3 r_SE" data-rellax-speed="-2"></li>
+                        <li class="rellax icon-4" data-rellax-speed="2"></li>
+                        <li class="rellax icon-1" data-rellax-speed="1"></li>
+                        <li class="rellax icon-5" data-rellax-speed="8"></li>
+                        <li class="rellax icon-4" data-rellax-speed="10"></li>
+                        <li class="rellax icon-5 r_1200" data-rellax-speed="-3"></li>
+                        <li class="rellax icon-1" data-rellax-speed="6"></li>
+                        <li class="rellax icon-4" data-rellax-speed="4"></li>
+                    </ul> 
+                </div> 
+        </section>
+        <section id="empty"></section>
+        <section id="section-3">
+            <div class="container flex article">
+                <div class="col-6 image-res">
+                    <img src="images/matthorse3.jpg" alt="cowboy" id="contact">
+                </div>
+                <div class="col-6 phrase-container phrases-res">
+                    <h4 class="text-left">
+                        <span class="phrase-1c phrase-text">"Si vous voulez </span>
+                        <span class="phrase-1c phrase-text">continuer d'en parler... </span>
+                        <span class="phrase-2c phrase-text addRemove">contactez moi....."</span>
+                    </h4>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mattmann.ec@gmail.com" class="email phrase-2c addRemove">mattmann.ec@gmail.com</a>
+                </div>
+            </div>
+            <div class="spray r_mobile">
+                <ul class="row icon-spray">
+                    <li class="rellax icon-2" data-rellax-speed="7"></li>
+                    <li class="rellax icon-2" data-rellax-speed="1"></li>
+                    <li class="rellax icon-1" data-rellax-speed="5"></li>
+                    <li class="rellax icon-3 " data-rellax-speed="2"></li>
+                    <li class="rellax icon-4" data-rellax-speed="3"></li>
+                </ul> 
+            </div>
+        </section>
+        <footer>
+            <div id="footer-container">
+                <div class="row flex">     
+                    <h5>Copyright Matt Mann 2019</h5>
+                    <h5>Website fait maison à partir d'ingredients frais</h5>
+                    <img src="images/fishblack.png" alt="fish">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jQuery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="rellax.min.js" class="r_mobile"></script>
+    <script src="js/SmoothScroll.js" class="r_touch"></script>
+</body>
+</html>
